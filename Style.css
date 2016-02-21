@@ -1,0 +1,280 @@
+@charset "UTF-8";/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-color: #ddd;
+}
+header {
+	width: 100%;
+	height: 4em;
+	background-color: #fff;
+	border-bottom: 0.1em solid #aaa;
+	z-index: 1;
+}
+
+header.clone {
+  position: fixed;
+  top: -65px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: 0.2s top cubic-bezier(.3,.73,.3,.74);
+}
+
+body.down header.clone {
+  top: 0;
+}
+
+header img {
+	height: 4em;
+	float: left;
+	margin-left: 2em;
+}
+
+header nav {
+	height: 4em;
+	margin-left: 40%;
+}
+header nav ul {
+	height: 100%;
+}
+
+header nav ul li{
+	height: 100%;
+	box-sizing: border-box;
+	width: 8em;
+	float: left;
+}
+
+header nav ul li a {
+	height: 100%;
+	font: 1.5em;
+    line-height: 4;
+    margin: 0;
+    padding: 1.5em;
+    box-sizing: border-box;
+    color: #555;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    list-style:none; 
+}
+
+header nav ul li a:hover{
+	background-color: #aaa;
+	color: #fff;
+	transition: all 0.4s ease-in-out;
+}
+
+.gap{
+	height: 12.5em;
+	width: 100%;
+	background-color: #fff;
+	transition: all 0.6s ease-in-out;
+	z-index: 4;
+}
+
+#gap2{margin-top: -3em;}
+
+#gap3{margin-top: -3em;}
+
+#Cleaning{
+	height: 650px;
+	width: 100%;
+	background: url(imgs/cleaning-268107m1280x830.png) no-repeat;
+	background-size: cover;
+	image-rendering: auto;
+	transition: all 0.6s ease-in-out;
+	z-index: 5;
+}
+
+#Info{
+	height: 650px;
+	width: 100%;
+	transform: scaleY(0.5);
+	background-color: #666;
+	margin-top: -10em;
+	background: url(imgs/cleaning-268068.jpg) no-repeat;
+	background-size: cover;
+	image-rendering: auto;
+	transition: all 0.6s ease-in-out;
+	z-index: 5;
+}
+
+#main_icon1,#main_icon2,#main_icon3{
+	display: none;
+}
+
+#icon_list{
+    height: 6em;
+    width: 27em;
+    margin: 0 34%;
+    margin-top: 2em;
+}
+
+#icon_list li{
+		float: left;
+		margin-left: 2em;
+}
+
+.icon{
+	height: 4em;
+	width: 4em;
+	background-size: cover;
+	image-rendering: auto;	
+	padding: 1em;
+	border-radius: 40%;
+	background: rgba(50,50,50,0.2);
+	transition: all 0.6s ease-in-out;
+}
+
+.icon:hover{
+	background: rgba(50,50,50,0.7);
+	transition: all 0.6s ease-in-out;
+}
+
+#Testimo{
+	height: 650px;
+	width: 100%;
+	margin-top: -10em;
+	transform: scaleY(0.5);
+	background: url(imgs/clean-571679.jpg) no-repeat;
+	background-size: cover;
+	image-rendering: auto;
+	transition: all 0.6s ease-in-out;
+}
+
+#Aboutus{
+	height: 650px;
+	width: 100%;
+	margin-top: -10em;
+	transform: scaleY(0.5);
+	background: url(imgs/wash-380830.jpg) no-repeat;
+	background-size: cover;
+	image-rendering: auto;
+	transition: all 0.6s ease-in-out;
+}
+
+#logo_text{
+	font-size: 1.5em;
+    padding: 0.85em;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    color: #555;
+    width: 8em;
+    float: left;
+}
+
+article h1{
+	padding-top: 1em;
+    text-align: center;
+	font-size: 4em;
+	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;  
+    color: #fff;
+    text-shadow: 2px 1px 1px #000;
+}
+
+article h2{
+	padding-top: 1em;
+    text-align: center;
+	font-size: 2.5em;
+	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;  
+	font-style: italic;
+    color: #fff;
+    text-shadow: 2px 1px 1px #000;
+}
+
+article p{
+	padding-top: 0.5em;
+    text-align: center;
+	font-size: 1.75em;
+	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;  
+	font-style: italic;
+    color: #fff;
+    text-shadow: 2px 1px 1px #000;
+}
+
+header.clone {
+  position: fixed;
+  top: -65px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: 0.2s top cubic-bezier(.3,.73,.3,.74);
+}
+
+body.down header.clone {
+  top: 0;
+}
+
+.clone{
+	position: fixed;
+	top: 0;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+}
+
+.big{
+	height: 4em;
+
+}
+
+.change{
+	z-index: 99;
+	transform: scaleY(1.0) !important;
+	transition: all 0.5s ease-in-out !important;
+}
+
+.moveup{
+	z-index: 99;
+	transform: translateY(-3em) ;
+	transition: all 0.8s ease-in-out !important;
+}
+
+.moveup2{
+	z-index: 99;
+	transform: translateY(-3em) scaleY(1)!important;
+	delay:3s;
+	transition: all 1.0s ease-in-out !important;
+}
